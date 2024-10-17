@@ -1,7 +1,5 @@
 import { create } from "zustand";
 
-const API_KEY = "AIzaSyBYQxNMuOl0hjbZlOtJI6PJHEB_fJFAq5E"; // Replace with your Google Books API key
-
 const useStore = create((set) => ({
   searchResults: [],
 

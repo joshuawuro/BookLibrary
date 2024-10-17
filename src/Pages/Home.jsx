@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import SearchBar from "../components/SearchBar";
 import BookCard from "../components/BookCard";
 
-const API_KEY = "AIzaSyBYQxNMuOl0hjbZlOtJI6PJHEB_fJFAq5E";
-
 const Home = () => {
   const [books, setBooks] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
