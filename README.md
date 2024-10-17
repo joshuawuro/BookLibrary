@@ -14,7 +14,11 @@ State Management: Application state is managed using Zustand.
 ## Technology Stack
 
 **React:** Frontend framework
+
 **Tailwind CSS:** For styling
+
 **Zustand:** For global state management
+
 **React Router:** For routing and navigation
+
 **OpenLibrary API:** For fetching book data
