@@ -1,35 +1,24 @@
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import React from "react";
+import { Link } from "react-router-dom";
 
-function Header() {
+const Header = () => {
   return (
-    <>
-      <header className="bg-blue-600 text-white py-4 text-center flex flex-row align-middle justify-around">
-        <h1 className="text-xl font-bold">
-          <Link to="/">
-            {" "}
-            {/* Link to home */}
-            Book Library
-          </Link>
+    <header className="bg-gray-800 text-white p-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <h1 className="text-2xl font-bold">
+          <Link to="/">BookIsh</Link>
         </h1>
-        <div className="flex flex-row align-middle justify-center text-xl font-bold">
-          <li className="list-none mr-3">
-            <Link to="/">
-              {" "}
-              {/* Link to Home page */}
-              Home
-            </Link>
-          </li>
-          <li className="list-none mr-3">
-            <Link to="/about">
-              {" "}
-              {/* Link to About page */}
-              About
-            </Link>
-          </li>
-        </div>
-      </header>
-    </>
+        <nav>
+          <Link to="/" className="px-4 hover:underline">
+            Home
+          </Link>
+          <Link to="/about" className="px-4 hover:underline">
+            About
+          </Link>
+        </nav>
+      </div>
+    </header>
   );
-}
+};
 
 export default Header;
