@@ -1,5 +1,7 @@
 import { create } from "zustand";
 
+const API_KEY = import.meta.env.VITE_API_KEY;
+
 const useStore = create((set) => ({
   searchResults: [],
 

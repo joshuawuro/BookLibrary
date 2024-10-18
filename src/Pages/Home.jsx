@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import SearchBar from "../components/SearchBar";
 import BookCard from "../components/BookCard";
 
+const API_KEY = import.meta.env.VITE_API_KEY;
+
 const Home = () => {
   const [books, setBooks] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
